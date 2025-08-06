@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Collage | Proposal Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef5e3;
+            color: #ae805c;
+        }
+        
+        .handwritten {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .scrapbook-corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23d69698" d="M100,0 L0,0 L0,100 C20,80 40,100 60,80 C80,60 100,80 100,0 Z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .scrapbook-corner.tr {
+            top: 0;
+            right: 0;
+            transform: rotate(90deg);
+        }
+        
+        .scrapbook-corner.bl {
+            bottom: 0;
+            left: 0;
+            transform: rotate(270deg);
+        }
+        
+        .scrapbook-corner.br {
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+        
+        .polaroid {
+            background: white;
+            padding: 15px 15px 60px 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+        }
+        
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        .sticker {
+            background: white;
+            padding: 8px 12px;
+            border-radius: 50px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transform: rotate(-5deg);
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        .torn-edge {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .torn-edge::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path fill="%23e6e2e1" d="M0,20 C20,25 40,15 60,20 C80,25 100,15 100,20 L100,0 L0,0 Z"/></svg>');
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header with Scrapbook Magic -->
+    <header class="relative bg-[#d69698] text-[#fef5e3] py-12 px-6 md:px-12 lg:px-24 overflow-hidden">
+        <div class="scrapbook-corner"></div>
+        <div class="scrapbook-corner tr"></div>
+        <div class="scrapbook-corner bl"></div>
+        <div class="scrapbook-corner br"></div>
+        
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <h1 class="handwritten text-5xl md:text-7xl mb-4">Shaheen Bhat</h1>
+            <p class="serif text-xl md:text-2xl mb-6">Senior Proposal Writer | (+91)7006080928 | bhatsheen708@gmail.com</p>
+            
+            <div class="flex justify-center space-x-4">
+                <span class="sticker bg-[#fef5e3] text-[#ae805c]">Golden Night Portfolio</span>
+                <span class="sticker bg-[#e6e2e1] text-[#d69698]">Cosmic Craft</span>
+                <span class="sticker bg-[#ae805c] text-[#fef5e3]">Torn Dreams</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Summary with Golden Night Portfolio -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#fef5e3]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-8 text-center">Professional Summary</h2>
+            <div class="bg-[#e6e2e1] p-8 rounded-lg shadow-lg relative">
+                <div class="absolute -top-4 -left-4 w-16 h-16 bg-[#d69698] rounded-full opacity-20"></div>
+                <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-[#ae805c] rounded-full opacity-20"></div>
+                <p class="text-lg mb-4 handwritten text-2xl text-center text-[#d69698]">
+                    Employing Innovative Problem-Solving. Proactively Approaching Challenges with Positivity.
+                </p>
+                <div class="space-y-4 text-[#ae805c]">
+                    <p>• Excelled as a Technical Writer, consistently crafting high-impact proposals and technical documents that strategically advanced organizational goals.</p>
+                    <p>• Demonstrated strategic acumen by aligning proposals with business objectives, contributing significantly to sustained growth and client success.</p>
+                    <p>• Orchestrated seamless collaboration between technical and management teams, extracting vital information and tailoring proposals with precision.</p>
+                    <p>• Conducted thorough research on clients and industry trends, infusing proposals with dynamic insights and forward-looking perspectives.</p>
+                    <p>• Meticulously reviewed and edited documents, ensuring alignment with client guidelines and maintaining a high standard of accuracy and consistency.</p>
+                    <p>• Managed proposal timelines and deliverables with a proactive approach, consistently ensuring the punctual submission of impeccably crafted proposals.</p>
+                    <p>• Secured contracts through the delivery of compelling and persuasive proposals, showcasing senior-level capabilities and a commitment to client success.</p>
+                    <p>• Established and maintained a comprehensive database of successful proposal templates, streamlining the proposal development process and ensuring messaging consistency.</p>
+                    <p>• Engaged proactively in industry conferences and forums, staying well-informed about emerging trends, competitor strategies, and industry best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Textured Typo -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#e6e2e1]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-8 text-center">About Me</h2>
+            
+            <div class="bg-[#fef5e3] p-8 rounded-lg shadow-lg relative">
+                <div class="absolute -top-4 -left-4 w-16 h-16 bg-[#d69698] rounded-full opacity-20"></div>
+                <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-[#ae805c] rounded-full opacity-20"></div>
+                
+                <p class="text-lg mb-4">Hello stargazer! I'm a proposal developer who crafts compelling narratives that win hearts and contracts. With a blend of technical precision and creative flair, I transform dry requirements into captivating stories.</p>
+                
+                <p class="text-lg">My approach combines <span class="font-bold text-[#d69698]">Celestial Collage</span> methodology with <span class="font-bold text-[#ae805c]">Scrapbook Magic</span> techniques to create proposals that stand out in any galaxy of competitors.</p>
+                
+                <div class="mt-6 flex flex-wrap justify-center">
+                    <span class="m-2 px-4 py-2 bg-[#d69698] text-[#fef5e3] rounded-full">Storytelling</span>
+                    <span class="m-2 px-4 py-2 bg-[#ae805c] text-[#fef5e3] rounded-full">Design Thinking</span>
+                    <span class="m-2 px-4 py-2 bg-[#e6e2e1] text-[#d69698] rounded-full">Visual Communication</span>
+                    <span class="m-2 px-4 py-2 bg-[#fef5e3] text-[#ae805c] rounded-full">Strategic Planning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Scrapbook Magic -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#d69698] text-[#fef5e3]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl mb-12 text-center">Cosmic Craft Skills</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <i class="fas fa-pen-fancy text-3xl mb-2"></i>
+                    <h3 class="serif text-xl mb-2">Proposal Writing</h3>
+                    <p class="text-sm">RFPs, RFIs, Grants</p>
+                </div>
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <i class="fas fa-chart-pie text-3xl mb-2"></i>
+                    <h3 class="serif text-xl mb-2">Data Visualization</h3>
+                    <p class="text-sm">Infographics, Charts</p>
+                </div>
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <i class="fas fa-search text-3xl mb-2"></i>
+                    <h3 class="serif text-xl mb-2">Research</h3>
+                    <p class="text-sm">Market Analysis</p>
+                </div>
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <i class="fas fa-file-alt text-3xl mb-2"></i>
+                    <h3 class="serif text-xl mb-2">Technical Writing</h3>
+                    <p class="text-sm">Manuals, Docs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section with Cosmic Craft -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#fef5e3]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-12 text-center">Cosmic Craft Gallery</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="relative group">
+                    <div class="polaroid">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Stellar Proposal Project" class="w-full h-48 object-cover">
+                        <p class="handwritten text-xl mt-4 text-center text-[#ae805c]">Stellar Proposal</p>
+                    </div>
+                    <div class="absolute inset-0 bg-[#d69698] bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="text-center p-4 text-[#fef5e3]">
+                            <h3 class="serif text-2xl mb-2">Golden Night Portfolio</h3>
+                            <p>Award-winning proposal for space tourism company</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="relative group">
+                    <div class="polaroid">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dreamweaver Project" class="w-full h-48 object-cover">
+                        <p class="handwritten text-xl mt-4 text-center text-[#ae805c]">Dreamweaver</p>
+                    </div>
+                    <div class="absolute inset-0 bg-[#ae805c] bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="text-center p-4 text-[#fef5e3]">
+                            <h3 class="serif text-2xl mb-2">Torn Dreams Approach</h3>
+                            <p>Innovative proposal framework for creative agency</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="relative group">
+                    <div class="polaroid">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Moonbeam Project" class="w-full h-48 object-cover">
+                        <p class="handwritten text-xl mt-4 text-center text-[#ae805c]">Moonbeam</p>
+                    </div>
+                    <div class="absolute inset-0 bg-[#e6e2e1] bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="text-center p-4 text-[#d69698]">
+                            <h3 class="serif text-2xl mb-2">Textured Typo Design</h3>
+                            <p>Visual proposal system for lunar architecture firm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience with Torn Dreams -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#fef5e3]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-12 text-center">Torn Dreams Journey</h2>
+            
+            <div class="space-y-8">
+                <div class="relative pl-8 border-l-4 border-[#d69698]">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-[#ae805c]"></div>
+                    <div class="bg-[#e6e2e1] p-6 rounded-lg">
+                        <h3 class="serif text-xl text-[#d69698]">Lead Proposal Developer</h3>
+                        <p class="text-[#ae805c] font-bold mb-2">Stellar Solutions | 2020-Present</p>
+                        <ul class="list-disc pl-5 text-[#ae805c] space-y-2">
+                            <li>Implemented Celestial Collage methodology increasing win rate by 40%</li>
+                            <li>Mentored team of 5 junior proposal writers</li>
+                            <li>Developed Golden Night Portfolio framework</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative pl-8 border-l-4 border-[#d69698]">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-[#ae805c]"></div>
+                    <div class="bg-[#e6e2e1] p-6 rounded-lg">
+                        <h3 class="serif text-xl text-[#d69698]">Technical Writer</h3>
+                        <p class="text-[#ae805c] font-bold mb-2">Moonbeam Technologies | 2017-2020</p>
+                        <ul class="list-disc pl-5 text-[#ae805c] space-y-2">
+                            <li>Created Textured Typo documentation system</li>
+                            <li>Reduced customer support queries by 30%</li>
+                            <li>Won "Scrapbook Magic" innovation award</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section with Torn Dreams -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#d69698] text-[#fef5e3] torn-edge">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl mb-12 text-center">My Scrapbook Magic Process</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#ae805c] bg-opacity-30 p-6 rounded-lg border-2 border-dashed border-[#fef5e3]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-[#fef5e3] text-[#d69698] flex items-center justify-center mr-4 font-bold">1</div>
+                        <h3 class="serif text-xl">Celestial Discovery</h3>
+                    </div>
+                    <p>I begin by stargazing - understanding your universe of needs, competitors, and the cosmic landscape we're navigating together.</p>
+                </div>
+                
+                <div class="bg-[#fef5e3] bg-opacity-30 p-6 rounded-lg border-2 border-dashed border-[#ae805c]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-[#ae805c] text-[#fef5e3] flex items-center justify-center mr-4 font-bold">2</div>
+                        <h3 class="serif text-xl text-[#fef5e3]">Golden Narrative</h3>
+                    </div>
+                    <p class="text-[#fef5e3]">Crafting the golden thread that weaves through your proposal, making it shine brighter than any competitor.</p>
+                </div>
+                
+                <div class="bg-[#e6e2e1] bg-opacity-30 p-6 rounded-lg border-2 border-dashed border-[#d69698]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-[#d69698] text-[#fef5e3] flex items-center justify-center mr-4 font-bold">3</div>
+                        <h3 class="serif text-xl text-[#fef5e3]">Cosmic Design</h3>
+                    </div>
+                    <p class="text-[#fef5e3]">Transforming words into visual constellations that guide evaluators to your solution like the North Star.</p>
+                </div>
+                
+                <div class="bg-[#d69698] bg-opacity-30 p-6 rounded-lg border-2 border-dashed border-[#e6e2e1]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-[#e6e2e1] text-[#d69698] flex items-center justify-center mr-4 font-bold">4</div>
+                        <h3 class="serif text-xl">Torn Perfection</h3>
+                    </div>
+                    <p>Editing ruthlessly - tearing away anything that doesn't serve the story, leaving only what truly matters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Writing Expertise -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#e6e2e1]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-8 text-center">Textured Typo Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-[#fef5e3] p-6 rounded-lg shadow-md">
+                    <h3 class="serif text-xl text-[#ae805c] mb-3">Documentation Types</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-[#d69698] mr-2"></i>
+                            User manuals & guides
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-[#d69698] mr-2"></i>
+                            API documentation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-[#d69698] mr-2"></i>
+                            Process documentation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-[#d69698] mr-2"></i>
+                            Technical specifications
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-[#fef5e3] p-6 rounded-lg shadow-md">
+                    <h3 class="serif text-xl text-[#ae805c] mb-3">Tools & Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-[#d69698] bg-opacity-20 text-[#d69698] rounded-full">MadCap Flare</span>
+                        <span class="px-3 py-1 bg-[#ae805c] bg-opacity-20 text-[#ae805c] rounded-full">Markdown</span>
+                        <span class="px-3 py-1 bg-[#d69698] bg-opacity-20 text-[#d69698] rounded-full">Confluence</span>
+                        <span class="px-3 py-1 bg-[#ae805c] bg-opacity-20 text-[#ae805c] rounded-full">Git</span>
+                        <span class="px-3 py-1 bg-[#d69698] bg-opacity-20 text-[#d69698] rounded-full">Figma</span>
+                        <span class="px-3 py-1 bg-[#ae805c] bg-opacity-20 text-[#ae805c] rounded-full">Swagger</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials with Textured Typo -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#fef5e3]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-12 text-center">Stellar Reviews</h2>
+            
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#d69698] to-[#ae805c]"></div>
+                    <p class="text-lg italic mb-4">"The Celestial Collage approach transformed our dry technical proposal into a compelling story that won us the $5M contract. Pure magic!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-[#e6e2e1] mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="font-bold text-[#d69698]">Sarah J.</p>
+                            <p class="text-sm text-[#ae805c]">CEO, Starlight Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#ae805c] to-[#d69698]"></div>
+                    <p class="text-lg italic mb-4">"Her Golden Night Portfolio methodology gave us an unfair advantage - our proposal stood out like a supernova in a sky full of ordinary stars."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-[#e6e2e1] mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maya R." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="font-bold text-[#d69698]">Maya R.</p>
+                            <p class="text-sm text-[#ae805c]">Director, Lunar Innovations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact with Scrapbook Magic -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#e6e2e1]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-8 text-center">Let's Create Cosmic Proposals Together</h2>
+            
+            <div class="bg-[#fef5e3] p-8 rounded-lg shadow-lg relative overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-40 h-40 bg-[#d69698] rounded-full opacity-10"></div>
+                <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-[#ae805c] rounded-full opacity-10"></div>
+                
+                <form class="relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-[#ae805c] mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded-lg border border-[#ae805c] focus:outline-none focus:ring-2 focus:ring-[#d69698]">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-[#ae805c] mb-2">Your Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded-lg border border-[#ae805c] focus:outline-none focus:ring-2 focus:ring-[#d69698]">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="message" class="block text-[#ae805c] mb-2">Your Cosmic Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-[#ae805c] focus:outline-none focus:ring-2 focus:ring-[#d69698]"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full md:w-auto px-8 py-3 bg-[#d69698] text-[#fef5e3] rounded-lg hover:bg-[#ae805c] transition-colors duration-300 font-bold">Launch Message</button>
+                </form>
+                
+                <div class="mt-8 pt-8 border-t border-[#ae805c] border-opacity-30 flex flex-col md:flex-row items-center justify-between">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <i class="fas fa-envelope text-[#d69698] text-xl mr-3"></i>
+                        <span class="text-[#ae805c]">bhatsheen708@gmail.com</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <!-- <a href="#" class="w-10 h-10 rounded-full bg-[#d69698] text-[#fef5e3] flex items-center justify-center hover:bg-[#ae805c] transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a> -->
+                        <a href="https://www.linkedin.com/in/shaheen-b-022a47260/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="w-10 h-10 rounded-full bg-[#d69698] text-[#fef5e3] flex items-center justify-center hover:bg-[#ae805c] transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <!-- <a href="#" class="w-10 h-10 rounded-full bg-[#d69698] text-[#fef5e3] flex items-center justify-center hover:bg-[#ae805c] transition-colors duration-300">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#fef5e3]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-8 text-center">Education</h2>
+            <div class="bg-[#e6e2e1] p-8 rounded-lg shadow-lg relative">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="serif text-xl text-[#d69698]">Masters in Computer Applications</h3>
+                        <p class="text-[#ae805c] font-bold">University of Kashmir, Srinagar J&amp;K<br>Apr 2016 - Dec 2019</p>
+                    </div>
+                    <div>
+                        <h3 class="serif text-xl text-[#d69698]">Bachelors in Computer Applications</h3>
+                        <p class="text-[#ae805c] font-bold">Kousar College of Education (UOK), Srinagar J&amp;K<br>Apr 2015 – Mar 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#fef5e3]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-12 text-center">Experience</h2>
+            <div class="space-y-8">
+                <!-- Expentor Inc -->
+                <div class="relative pl-8 border-l-4 border-[#d69698]">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-[#ae805c]"></div>
+                    <div class="bg-[#e6e2e1] p-6 rounded-lg">
+                        <h3 class="serif text-xl text-[#d69698]">Team Lead – External</h3>
+                        <p class="text-[#ae805c] font-bold mb-2">Expentor Inc, New Jersey, United States | Feb 2024 – Present</p>
+                        <ul class="list-disc pl-5 text-[#ae805c] space-y-2">
+                            <li>Leading creation of client-side proposals, developing strategic approaches aligned with client requirements and organizational goals.</li>
+                            <li>Collaborate with Capture and SMEs to gather input, ensuring comprehensive and accurate proposals.</li>
+                            <li>Oversee drafting, editing, and finalization of proposal content, ensuring clarity, consistency, and brand alignment.</li>
+                            <li>Serve as primary liaison with clients, gathering feedback and refining proposals to meet expectations.</li>
+                            <li>Identify risks in proposal development and develop mitigation strategies for timely delivery.</li>
+                            <li>Oversee end-to-end proposal lifecycle, ensuring alignment with client expectations at each stage.</li>
+                            <li>Ensure proposals meet regulatory, legal, and industry standards, as well as internal compliance.</li>
+                            <li>Analyze proposal success rates and gather insights to improve future strategies.</li>
+                            <li>Lead and mentor a team of proposal developers, fostering a collaborative and innovative environment.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Cogent InfoTech -->
+                <div class="relative pl-8 border-l-4 border-[#d69698]">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-[#ae805c]"></div>
+                    <div class="bg-[#e6e2e1] p-6 rounded-lg">
+                        <h3 class="serif text-xl text-[#d69698]">Senior Proposal Writer</h3>
+                        <p class="text-[#ae805c] font-bold mb-2">Cogent InfoTech, Pittsburgh PA, United States | Jun 2022 – Jan 2024</p>
+                        <ul class="list-disc pl-5 text-[#ae805c] space-y-2">
+                            <li>Developed and composed comprehensive proposals, RFP, RFI, RFQ responses, and pitch materials.</li>
+                            <li>Collaborated with technical and management teams to tailor proposals to client needs.</li>
+                            <li>Conducted research on clients and industry trends to create persuasive and relevant content.</li>
+                            <li>Implemented meticulous proposal review and editing process for accuracy and compliance.</li>
+                            <li>Managed proposal timelines and deliverables, ensuring punctual submissions.</li>
+                            <li>Secured contracts by delivering well-crafted proposals showcasing company expertise.</li>
+                            <li>Maintained communication with stakeholders and incorporated latest project information.</li>
+                            <li>Refined proposal strategies based on feedback and industry best practices.</li>
+                            <li>Led collaborative sessions with SMEs to gather technical details for client-specific proposals.</li>
+                            <li>Incorporated visual elements and data analytics to enhance proposal readability.</li>
+                            <li>Established and maintained a database of successful proposal templates.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Qbil ERP / Yarikul InfoTech -->
+                <div class="relative pl-8 border-l-4 border-[#d69698]">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-[#ae805c]"></div>
+                    <div class="bg-[#e6e2e1] p-6 rounded-lg">
+                        <h3 class="serif text-xl text-[#d69698]">Technical Writer cum Quality Assurance Engineer</h3>
+                        <p class="text-[#ae805c] font-bold mb-2">Qbil ERP Commodity Trading Software B.V. / Yarikul InfoTech, Netherlands / Srinagar J&amp;K | Mar 2021 – May 2022</p>
+                        <ul class="list-disc pl-5 text-[#ae805c] space-y-2">
+                            <li>Initiated and led development of technical and functional documentation, establishing a robust knowledge base.</li>
+                            <li>Created comprehensive documentation for software products, aiding internal developer teams.</li>
+                            <li>Pioneered end-user product documentation, consistently meeting team deadlines.</li>
+                            <li>Collaborated with product teams to ensure up-to-date knowledge base content.</li>
+                            <li>Implemented proactive approach to monitor and address end-user requirements, increasing customer satisfaction by 15%.</li>
+                            <li>Conducted training sessions for internal teams to enhance documentation usage.</li>
+                            <li>Reviewed and analyzed system specifications for quality alignment.</li>
+                            <li>Reported and documented technical issues, reducing post-release defects by 30%.</li>
+                            <li>Developed and executed manual test cases, ensuring comprehensive product testing.</li>
+                            <li>Created logs to document testing phases and defects, facilitating efficient issue resolution.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lelafe IT Solutions Internship -->
+                <div class="relative pl-8 border-l-4 border-[#d69698]">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-[#ae805c]"></div>
+                    <div class="bg-[#e6e2e1] p-6 rounded-lg">
+                        <h3 class="serif text-xl text-[#d69698]">ML Engineer (Intern)</h3>
+                        <p class="text-[#ae805c] font-bold mb-2">Lelafe IT Solutions, Srinagar J&amp;K | Sep 2020 - Feb 2021</p>
+                        <ul class="list-disc pl-5 text-[#ae805c] space-y-2">
+                            <li>Participated in daily design, training, and testing reviews for effective team collaboration.</li>
+                            <li>Implemented Object Detection, Person-Path-Tracker, and Image Classification projects.</li>
+                            <li>Optimized image recognition algorithms, reducing processing time by 15%.</li>
+                            <li>Contributed to user manual development for machine learning projects.</li>
+                            <li>Conducted internal workshops, increasing team understanding of ML concepts by 25%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#d69698] text-[#fef5e3]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl mb-12 text-center">Technical & Business Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <h3 class="serif text-xl mb-2 text-[#ae805c]">Languages</h3>
+                    <p class="text-sm text-[#ae805c]">Python, Java, C, HTML, CSS</p>
+                </div>
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <h3 class="serif text-xl mb-2 text-[#ae805c]">Technologies</h3>
+                    <p class="text-sm text-[#ae805c]">Deep Learning, Computer Vision, Machine Learning, WordPress, GitHub</p>
+                </div>
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <h3 class="serif text-xl mb-2 text-[#ae805c]">Proposal & Writing</h3>
+                    <p class="text-sm text-[#ae805c]">Proposal Writing, Content Writing, Wiki Writing, Documentation, Proofreading</p>
+                </div>
+                <div class="bg-[#fef5e3] bg-opacity-20 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <h3 class="serif text-xl mb-2 text-[#ae805c]">Tools</h3>
+                    <p class="text-sm text-[#ae805c]">Microsoft Office, Adobe Acrobat, Grammarly, Canva, Google Docs, RFPIO, Jira, Asana, Microsoft Teams</p>
+                </div>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-[#ae805c] bg-opacity-30 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <h3 class="serif text-xl mb-2 text-[#fef5e3]">Project Management</h3>
+                    <p class="text-sm text-[#fef5e3]">Project Management, Client Relationship, Communication, Technical Testing</p>
+                </div>
+                <div class="bg-[#ae805c] bg-opacity-30 p-4 rounded-lg border border-dashed border-[#fef5e3] text-center">
+                    <h3 class="serif text-xl mb-2 text-[#fef5e3]">Research & Training</h3>
+                    <p class="text-sm text-[#fef5e3]">Research, Training, Content Development, Research Databases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#fef5e3]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-12 text-center">Projects Undertaken</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="polaroid">
+                    <h3 class="serif text-xl text-[#ae805c] mb-2">Person-Path Tracker</h3>
+                    <p class="text-sm text-[#ae805c]">Jan 2021 – Feb 2021</p>
+                </div>
+                <div class="polaroid">
+                    <h3 class="serif text-xl text-[#ae805c] mb-2">Image Classification of Objects</h3>
+                    <p class="text-sm text-[#ae805c]">Dec 2020 – Jan 2021</p>
+                </div>
+                <div class="polaroid">
+                    <h3 class="serif text-xl text-[#ae805c] mb-2">Object Detection</h3>
+                    <p class="text-sm text-[#ae805c]">Oct 2020 – Nov 2020</p>
+                </div>
+                <div class="polaroid">
+                    <h3 class="serif text-xl text-[#ae805c] mb-2">Bot Detector</h3>
+                    <p class="text-sm text-[#ae805c]">Apr 2019 – Oct 2019</p>
+                </div>
+                <div class="polaroid">
+                    <h3 class="serif text-xl text-[#ae805c] mb-2">Research Work</h3>
+                    <p class="text-sm text-[#ae805c]">Apr 2019 – Oct 2019</p>
+                </div>
+                <div class="polaroid">
+                    <h3 class="serif text-xl text-[#ae805c] mb-2">Student Registration Management System</h3>
+                    <p class="text-sm text-[#ae805c]">Oct 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16 px-6 md:px-12 lg:px-24 bg-[#e6e2e1]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif text-3xl md:text-4xl text-[#d69698] mb-8 text-center">Courses & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-[#fef5e3] p-6 rounded-lg shadow-md">
+                    <ul class="space-y-2 text-[#ae805c]">
+                        <li><span class="font-bold text-[#d69698]">University of Rice, Houston, Texas:</span> Writing Skills for Engineering Leaders - 2022</li>
+                        <li><span class="font-bold text-[#d69698]">Udemy:</span> Technical Writing - Creating Software Documentation - 2022</li>
+                        <li><span class="font-bold text-[#d69698]">AWS Partner:</span> Sales Accreditation (Business) - 2023</li>
+                        <li><span class="font-bold text-[#d69698]">Google:</span> Digital Marketing - current</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-[#ae805c] text-[#fef5e3] text-center">
+        <p class="handwritten text-2xl mb-2">Sahara.ai</p>
+        <p class="text-sm">© 2025 All rights reserved | Crafted with <i class="fas fa-heart text-[#d69698]"></i> among the stars</p>
+    </footer>
+
+    <script>
+        // Simple animation for stickers
+        document.addEventListener('DOMContentLoaded', function() {
+            const stickers = document.querySelectorAll('.sticker');
+            
+            stickers.forEach((sticker, index) => {
+                // Random rotation between -10 and 10 degrees
+                const rotation = -5 + Math.random() * 10;
+                sticker.style.transform = `rotate(${rotation}deg)`;
+                
+                // Add hover effect
+                sticker.addEventListener('mouseenter', function() {
+                    this.style.transform = 'rotate(0deg) scale(1.1)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                sticker.addEventListener('mouseleave', function() {
+                    this.style.transform = `rotate(${rotation}deg) scale(1)`;
+                });
+            });
+            
+            // Polaroid hover effect
+            const polaroids = document.querySelectorAll('.polaroid');
+            polaroids.forEach(polaroid => {
+                const originalRotation = -2;
+                
+                polaroid.addEventListener('mouseenter', function() {
+                    this.style.transform = 'rotate(0deg) scale(1.05)';
+                });
+                
+                polaroid.addEventListener('mouseleave', function() {
+                    this.style.transform = `rotate(${originalRotation}deg) scale(1)`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
